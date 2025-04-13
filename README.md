@@ -38,4 +38,5 @@ Training Accuracy:
 Achieving a training accuracy of 95.8% means that the model was able to correctly classify the vast majority of the training images. This high accuracy reflects the model's ability to learn intricate patterns and features relevant to the classification of 10 distinct eye diseases. It also indicates that the network's parameters were well-optimized, minimizing classification errors on the training set.
 Such performance highlights the effectiveness of using a pre-trained VGG16 backbone along with fine-tuning and data augmentation strategies, resulting in a model capable of distinguishing between subtle variations in medical images with high precision.
 
+![image](download(2).png)
 ## Demo
