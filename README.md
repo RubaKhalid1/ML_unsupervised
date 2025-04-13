@@ -43,4 +43,3 @@ Such performance highlights the effectiveness of using a pre-trained VGG16 backb
 ### Predication
 ![image](download2.png) 
 ![image](download3.png) 
-## Demo
