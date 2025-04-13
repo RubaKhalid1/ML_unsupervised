@@ -22,6 +22,20 @@ The model takes an input image of size (224, 224, 3), which aligns with the expe
 The original classification head of VGG16 is replaced with custom dense layers to suit the 10-class output. Only the last block (block5) of VGG16 is unfrozen and trained, while the rest of the network remains frozen to preserve learned features.
 The model is trained using the Adam optimizer and categorical cross-entropy loss, with performance evaluated through accuracy. 
 
-### Model Plot
+## Results
+The model was trained for a total of 20 epochs, and the results at epoch 20 demonstrated the best overall performance and balance between learning and generalization:
 
-![image](download (1).png)
+Training Accuracy: 95.8%
+
+Validation Accuracy: 86.35%
+
+Validation Loss: 0.6657
+
+At epoch 20, the model reached its highest validation accuracy and one of the lowest validation losses across the entire training process. This suggests that the model not only learned the training data effectively but also generalized well to unseen validation data a critical indicator of model robustness.
+
+Training Accuracy: 
+
+Achieving a training accuracy of 95.8% means that the model was able to correctly classify the vast majority of the training images. This high accuracy reflects the model's ability to learn intricate patterns and features relevant to the classification of 10 distinct eye diseases. It also indicates that the network's parameters were well-optimized, minimizing classification errors on the training set.
+Such performance highlights the effectiveness of using a pre-trained VGG16 backbone along with fine-tuning and data augmentation strategies, resulting in a model capable of distinguishing between subtle variations in medical images with high precision.
+
+## Demo
